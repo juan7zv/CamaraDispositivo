@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permiso para acceder a la cámara del dispositivo -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <!-- Declara que la app puede usar cámara, pero no es obligatorio tenerla -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
 
     <application
         android:allowBackup="true"
